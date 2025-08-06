@@ -6,13 +6,16 @@
   "include": [
     ".plasmo/index.d.ts",
     "./**/*.ts",
-    "./**/*.tsx"
+    "./**/*.tsx",
+    "./**/*.d.ts"
   ],
   "compilerOptions": {
+    "resolveJsonModule": true,
     "paths": {
       "~*": [
         "./src/*"
-      ]
+      ],
+      "@/*": ["./src/*"],
     },
     "baseUrl": "."
   }
